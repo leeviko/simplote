@@ -1,0 +1,11 @@
+{
+  "name": "noteapp",
+  "version": "1.0.0",
+  "description": "Simple note taker",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ./"
+  },
+  "author": "Leevi Kotilainen",
+  "license": "ISC"
+}
