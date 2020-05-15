@@ -5,6 +5,8 @@ const {app, BrowserWindow} = require('electron')
 let mainWindow = null
 
 function createWindow () {
+    makeSingleInstance()
+
     mainWindow = new BrowserWindow({
         webPreferences: {
             nodeIntegration: true
@@ -21,6 +23,21 @@ function createWindow () {
         mainWindow = null
       })
 }
+
+
+function makeSingleInstance () {
+    if (process.mas) return
+    
+    app.requestSingleInstanceLock()
+  
+    app.on('second-instance', () => {
+      if (mainWindow) {
+        if (mainWindow.isMinimized()) mainWindow.restore()
+        mainWindow.focus()
+      }
+    })
+  }
+
 
 //Creates window when ready
 app.on("ready", () => {
