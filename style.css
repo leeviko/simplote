@@ -13,34 +13,84 @@ body {
 }
 
 .hero-pic {
+    margin-bottom: 20px;
+    background-color: rgb(30, 44, 66);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: #D9DAD7;
+    font-family: 'Shanti', sans-serif;
+    display: flex;
     text-align: left;
     padding: 10px;
 }
 
 .hero-pic img{
+    margin-right: 10px;
     width: 100px;
     height: 100px;
 }
 
+.hero-txt{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    height: 40px;
+    width: 100%;
+    border-bottom: 2px solid #0070FF;
+    padding-left: 10px;
+    font-size: 32px;
+}
+
+.sub-text {
+    text-transform: none;
+    letter-spacing: normal;
+    margin-top: 2px;
+    font-size: 18px;
+}
+
 
 form {
+    /* background-color: rgb(30, 44, 66); */
+    transition: 0.25s;
     width: 50%;
     position: relative;
     height: 50%;
     font-family: 'Rambla', sans-serif;
     font-size: 1.25rem;
-    color: #D9DAD7;
+    color: rgb(219, 206, 190);
 }
 
-form input{
-    padding-left: 5px;
+form input {
+    background-color: rgb(103, 116, 139);
+    color: rgb(219, 206, 190);
+    outline: none;
+    transition: 0.25s;
+    box-sizing: border-box;
     font-family: 'Shanti', sans-serif;
-    margin-top: 10px;
-    margin-bottom: 10px;
     width: 100%;
     height: 100%;
-    border: 2px solid #0070FF;
     border-radius: 5px;
+}
+form input[type = "text"]{
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(44, 65, 99);
+}
+
+form input[type = "submit"] {
+    padding: 5px;
+    margin-top: 10px;
+    border: 2px solid #C24D2C;
+
+}
+
+form input[type = "text"]:focus {
+    border-color: #0070FF;
+}
+
+form input[type = "submit"]:hover {
+    background-color: #C24D2C;
+    cursor: pointer;
 }
 
 #desc-field {
