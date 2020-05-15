@@ -10,4 +10,19 @@ function createWindow () {
             nodeIntegration: true
         }
     })
+    mainWindow.loadURL(url.format ({ 
+        pathname: path.join(__dirname, 'index.html'), 
+        protocol: 'file:', 
+        slashes: true 
+     })) 
+
+    //Garbage collector
+    mainWindow.on('closed', () => {
+        mainWindow = null
+      })
 }
+
+//Creates window when ready
+app.on("ready", () => {
+    createWindow()
+})
