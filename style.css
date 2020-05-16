@@ -113,9 +113,15 @@ form input[type = "button"]:hover {
     height: 175px;
     color: #D9DAD7;
     background-color: rgb(30, 44, 66);
+    background: rgb(30, 44, 66);
+    transition: width 0.25s linear;
     padding: 10px;
     border: 2px solid #0070FF;
     border-radius: 10px;
+}
+
+.section section:hover {
+    width: 170px;
 }
 
 .section section .title-sect {
@@ -127,3 +133,4 @@ form input[type = "button"]:hover {
 .section section .desc-sect {
     font-family: 'Rambla', sans-serif;
 }
+
