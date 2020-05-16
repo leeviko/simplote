@@ -131,6 +131,7 @@ form input[type = "button"]:hover {
 }
 
 .section section .desc-sect {
+    padding-top: 2px;
     font-family: 'Rambla', sans-serif;
 }
 

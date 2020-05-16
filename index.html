@@ -29,6 +29,12 @@
 
     <script>
         require("./add_note")
+        document.getElementById("btn-field").onclick = () => {clearInput()};
+
+        function clearInput() {
+            document.getElementById("title-field").value = "";
+            document.getElementById("desc-field").value = "";
+        }
     </script>
 </body>
 </html>
