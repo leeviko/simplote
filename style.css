@@ -102,36 +102,28 @@ form input[type = "button"]:hover {
     height: 20px;
 }
 
-/* #note_list{
-    display: flex;
-    align-items: flex-start;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Shanti', sans-serif;
-    list-style: none;
-}
-
-.sect {
-
-}
-
-
-.title-sect {
-    margin-top: 10px;
-    font-size: 1.25rem;
-    color: dimgrey;
-
-}
-
-.desc-sect {
-    margin-left: 5px;
-    color: #D9DAD7;
-
-} */
-
 .section {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
 
+.section section {
+    width: 150px;
+    height: 175px;
+    color: #D9DAD7;
+    background-color: rgb(30, 44, 66);
+    padding: 10px;
+    border: 2px solid #0070FF;
+    border-radius: 10px;
+}
+
+.section section .title-sect {
+    font-size: 1.1rem;
+    font-family: 'Shanti', sans-serif;
+    border-bottom: 1px solid #0070FF;
+}
+
+.section section .desc-sect {
+    font-family: 'Rambla', sans-serif;
+}
