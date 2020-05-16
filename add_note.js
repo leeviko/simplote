@@ -1,13 +1,19 @@
 const addBtn = document.getElementById("btn-field");
 const titleInput = document.getElementById("title-field");
 const descInput = document.getElementById("desc-field");
+const noteSection = document.getElementById("note-section")
+
+var count = 0
 
 addBtn.addEventListener("click", () => {
+    count++
+    console.log(count)
+    // TODO: title and desc inside div
     const titleValue = titleInput.value
     const descValue = descInput.value
-
-    const noteTitleList = document.createElement("li");
-    const noteDescList = document.createElement("li");
+    
+    const noteTitleList = document.createElement("div");
+    const noteDescList = document.createElement("div");
     noteTitleList.classList.add("title-sect")
     noteDescList.classList.add("desc-sect")
 
@@ -16,12 +22,16 @@ addBtn.addEventListener("click", () => {
 
     noteTitleList.appendChild(titleNode)
     noteDescList.appendChild(descNode)
-    document.getElementById("note_list").appendChild(noteTitleList);
-    document.getElementById("note_list").appendChild(noteDescList);
 
-    // console.log(titleValue)
-    // console.log(descValue)
+    const sect = document.createElement("section");
+    sect.id = "content" + count;
+    console.log(sect.id)
+    noteSection.appendChild(sect)
 
-    // document.getElementById("")
 
-})
+    document.getElementById("content"+count).appendChild(noteTitleList);
+    document.getElementById("content"+count).appendChild(noteDescList);
+
+
+
+});

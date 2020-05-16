@@ -102,18 +102,36 @@ form input[type = "button"]:hover {
     height: 20px;
 }
 
-#note_list{
+/* #note_list{
+    display: flex;
+    align-items: flex-start;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Shanti', sans-serif;
     list-style: none;
 }
+
+.sect {
+
+}
+
 
 .title-sect {
     margin-top: 10px;
     font-size: 1.25rem;
     color: dimgrey;
+
 }
 
 .desc-sect {
     margin-left: 5px;
     color: #D9DAD7;
+
+} */
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
+
